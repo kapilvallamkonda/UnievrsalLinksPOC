@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042723E61DFA76260008AE57 /* UniversalLinksPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniversalLinksPOC.entitlements; sourceTree = "<group>"; };
 		045DBC391DFA6BD200377095 /* UniversalLinksPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalLinksPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045DBC3C1DFA6BD200377095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045DBC3E1DFA6BD200377095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		045DBC3B1DFA6BD200377095 /* UniversalLinksPOC */ = {
 			isa = PBXGroup;
 			children = (
+				042723E61DFA76260008AE57 /* UniversalLinksPOC.entitlements */,
 				045DBC3C1DFA6BD200377095 /* AppDelegate.swift */,
 				045DBC3E1DFA6BD200377095 /* ViewController.swift */,
 				045DBC401DFA6BD200377095 /* Main.storyboard */,
@@ -193,8 +195,13 @@
 				TargetAttributes = {
 					045DBC381DFA6BD100377095 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = YPYQ72C2TG;
+						DevelopmentTeam = 9543V63V73;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					045DBC4C1DFA6BD200377095 = {
 						CreatedOnToolsVersion = 8.0;
@@ -415,10 +422,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YPYQ72C2TG;
+				CODE_SIGN_ENTITLEMENTS = UniversalLinksPOC/UniversalLinksPOC.entitlements;
+				DEVELOPMENT_TEAM = 9543V63V73;
 				INFOPLIST_FILE = UniversalLinksPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kvapps.UniversalLinksPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kvapps.MyUniversalLinksPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -428,10 +436,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YPYQ72C2TG;
+				CODE_SIGN_ENTITLEMENTS = UniversalLinksPOC/UniversalLinksPOC.entitlements;
+				DEVELOPMENT_TEAM = 9543V63V73;
 				INFOPLIST_FILE = UniversalLinksPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kvapps.UniversalLinksPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kvapps.MyUniversalLinksPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,6 +523,7 @@
 				045DBC631DFA6BD200377095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045DBC641DFA6BD200377095 /* Build configuration list for PBXNativeTarget "UniversalLinksPOCTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +532,7 @@
 				045DBC661DFA6BD200377095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045DBC671DFA6BD200377095 /* Build configuration list for PBXNativeTarget "UniversalLinksPOCUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +541,7 @@
 				045DBC691DFA6BD200377095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
